@@ -6,17 +6,17 @@ class student:
 		self.sid=None
 
         def check_qualification(self):
-             	if validate_age() and validate_marks() and marks>65:
+             	if self.validate_age() and self.validate_marks() and self.marks>65:
 			return True
 		else:
 			return False
 
 	def set_details(self):
 		print("\n-------Admission---------\n")	
-		sid=int(input("Enter id\n"))
-		marks=int(input("\nEnter marks\n"))
-		age=int(input("\nEnter Age\n"))
-		if check_qualification():
+		self.sid=int(input("Enter id\n"))
+		self.marks=int(input("\nEnter marks\n"))
+		self.age=int(input("\nEnter Age\n"))
+		if self.check_qualification():
 			return True
 		else:
 			return False
